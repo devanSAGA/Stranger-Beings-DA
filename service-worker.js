@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Stranger-Beings-DA/precache-manifest.44635960f57b80ff93b09bdf0c30abab.js"
+  "/Stranger-Beings-DA/precache-manifest.f3fcf86fe452ceb671b73b05ec86ab7b.js"
 );
 
 workbox.clientsClaim();
