@@ -1,0 +1,42 @@
+.subheader-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.subheader {
+  text-align: center;
+  color: #113f67;
+  border: 3px dashed #38598b;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.7;
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 0px 20px;
+  z-index: 1;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  width: 30%;
+  color: #38598b;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 468px) {
+  .subheader {
+    font-size: 18px;
+  }
+
+  hr {
+    display: none;
+  }
+}

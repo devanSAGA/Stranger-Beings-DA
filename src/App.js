@@ -1,25 +1,21 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import SubHeader from "./components/subHeader/subHeader";
+import Header from "./components/Header";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            <span role="img" aria-label="Construction Emoji">
-              🚧
-            </span>Under Construction!<span
-              role="img"
-              aria-label="Construction Emoji"
-            >
-              🚧
-            </span>
-          </p>
-          <p>Please be back soon!</p>
-        </header>
+        <Header />
+        <SubHeader semester={1} />
+        <SubHeader semester={2} />
+        <SubHeader semester={3} />
+        <SubHeader semester={4} />
+        <SubHeader semester={5} />
+        <SubHeader semester={6} />
+        <SubHeader semester={7} />
+        <SubHeader semester={8} />
       </div>
     );
   }

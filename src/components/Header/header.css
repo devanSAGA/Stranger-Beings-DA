@@ -1,0 +1,27 @@
+.header-container {
+  margin: 30px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #113f67;
+  box-sizing: border-box;
+}
+
+.header-navigation-dropdown {
+  margin: 15px;
+}
+
+.header-navigation-dropdown span {
+  font-size: 18px;
+}
+
+.dropdown {
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+  z-index: 999;
+}
