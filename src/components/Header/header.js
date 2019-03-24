@@ -13,6 +13,8 @@ const options = [
   { value: "semester8", label: "Semester 8" }
 ];
 
+const BASE_URL = "https://devansaga.github.io/Stranger-Beings-DA";
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -24,11 +26,9 @@ class Header extends React.Component {
   handleChange = selectedOption => {
     this.setState({ selectedOption }, () => {
       if (selectedOption) {
-        window.location.href = `${window.location.origin}/#${
-          selectedOption.value
-        }`;
+        window.location.href = `${BASE_URL}/#${selectedOption.value}`;
       } else {
-        window.location.href = `${window.location.origin}`;
+        window.location.href = `${BASE_URL}`;
       }
     });
   };
