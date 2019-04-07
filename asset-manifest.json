@@ -1,13 +1,16 @@
 {
-  "main.css": "/Stranger-Beings-DA/static/css/main.1ea224e1.chunk.css",
-  "main.js": "/Stranger-Beings-DA/static/js/main.e50f2488.chunk.js",
-  "main.js.map": "/Stranger-Beings-DA/static/js/main.e50f2488.chunk.js.map",
+  "main.css": "/Stranger-Beings-DA/static/css/main.251eecda.chunk.css",
+  "main.js": "/Stranger-Beings-DA/static/js/main.0e48e3a1.chunk.js",
+  "main.js.map": "/Stranger-Beings-DA/static/js/main.0e48e3a1.chunk.js.map",
   "runtime~main.js": "/Stranger-Beings-DA/static/js/runtime~main.efdab85e.js",
   "runtime~main.js.map": "/Stranger-Beings-DA/static/js/runtime~main.efdab85e.js.map",
-  "static/js/2.10fe2358.chunk.js": "/Stranger-Beings-DA/static/js/2.10fe2358.chunk.js",
-  "static/js/2.10fe2358.chunk.js.map": "/Stranger-Beings-DA/static/js/2.10fe2358.chunk.js.map",
+  "static/js/2.19a75941.chunk.js": "/Stranger-Beings-DA/static/js/2.19a75941.chunk.js",
+  "static/js/2.19a75941.chunk.js.map": "/Stranger-Beings-DA/static/js/2.19a75941.chunk.js.map",
   "index.html": "/Stranger-Beings-DA/index.html",
-  "precache-manifest.fa889a36aa955db57eb11d59ec9b2e48.js": "/Stranger-Beings-DA/precache-manifest.fa889a36aa955db57eb11d59ec9b2e48.js",
+  "precache-manifest.7dfb515ad272b420d2da9cc16b8b3f6b.js": "/Stranger-Beings-DA/precache-manifest.7dfb515ad272b420d2da9cc16b8b3f6b.js",
   "service-worker.js": "/Stranger-Beings-DA/service-worker.js",
-  "static/css/main.1ea224e1.chunk.css.map": "/Stranger-Beings-DA/static/css/main.1ea224e1.chunk.css.map"
+  "static/css/main.251eecda.chunk.css.map": "/Stranger-Beings-DA/static/css/main.251eecda.chunk.css.map",
+  "static/media/horizontal.png": "/Stranger-Beings-DA/static/media/horizontal.c52610f4.png",
+  "static/media/vertical1.png": "/Stranger-Beings-DA/static/media/vertical1.6a104216.png",
+  "static/media/vertical2.png": "/Stranger-Beings-DA/static/media/vertical2.ca3a8e47.png"
 }
