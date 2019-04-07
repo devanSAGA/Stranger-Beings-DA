@@ -1,12 +1,10 @@
 import React from "react";
 
-import SubHeader from '../subHeader/subHeader';
+import SubHeader from "../../components/subHeader/subHeader";
 import "./semesterSeven.css";
 
 const SemesterSeven = props => {
-  return (
-        <SubHeader semester={7} />
-    );
+  return <SubHeader title="Semester 7" />;
 };
 
 export default SemesterSeven;

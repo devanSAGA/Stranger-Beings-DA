@@ -5,7 +5,7 @@ const subHeader = props => {
   return (
     <div className="subheader-container" id={`semester${props.semester}`}>
       <hr />
-      <div className="subheader">Semester {props.semester}</div>
+      <div className="subheader">{props.title}</div>
       <hr />
     </div>
   );
