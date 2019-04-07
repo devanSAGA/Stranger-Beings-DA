@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router";
 import "./header.css";
 import Select from "react-select";
 
@@ -24,12 +25,11 @@ class Header extends React.Component {
   }
 
   handleChange = selectedOption => {
-    console.log('BASE_URL :', BASE_URL);
+    console.log("BASE_URL :", BASE_URL);
     this.setState({ selectedOption }, () => {
       if (selectedOption) {
         // window.location.href = `${BASE_URL}/${selectedOption.value}`;
         this.props.history.push(`${selectedOption.value}`);
-
       } else {
         window.location.href = `${BASE_URL}`;
       }
@@ -39,7 +39,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header-container">
-        <div className="header-title">Stranger Bein (DA Edition)</div>
+        <div className="header-title">Stranger Beings (DA Edition)</div>
         <div className="header-navigation-dropdown">
           <span>Go To: </span>
           <Select
@@ -55,4 +55,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
