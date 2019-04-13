@@ -17,7 +17,7 @@ const options = [
   { value: "random", label: "RANDOM" }
 ];
 
-const BASE_URL = `${window.location.origin}/Stranger-Beings-DA`;
+const BASE_URL = `https://devansaga.github.io/Stranger-Beings-DA/`;
 
 class Header extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class Header extends React.Component {
         // window.location.href = `${BASE_URL}/${selectedOption.value}`;
         this.props.history.push(`${selectedOption.value}`);
       } else {
-        window.location.href = `${BASE_URL}`;
+        this.props.history.push(``);
       }
     });
   };
