@@ -16,7 +16,7 @@ import Random from "../pages/randomPage/randomPage";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Stranger-Beings-DA">
       <React.Fragment>
         <Header />
         <Switch>
