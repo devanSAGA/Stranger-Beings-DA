@@ -15,6 +15,8 @@ import RIPage from "../pages/ripage/ripage";
 import Random from "../pages/randomPage/randomPage";
 import TripPage from "../pages/tripPage/tripPage";
 import imageFetch from "../pages/imageFetch/imageFetch";
+import TripPage from "../pages/tripPage/tripPage";
+
 
 const AppRouter = () => {
   return (
@@ -34,6 +36,7 @@ const AppRouter = () => {
           <Route path="/rural-internship" component={RIPage} />
           <Route path="/trip" component={TripPage} />
           <Route path = "/imageFetch" component = {imageFetch} />
+          <Route path="/trip" component={TripPage} />
           <Route path="/random" component={Random} />
         </Switch>
       </React.Fragment>
