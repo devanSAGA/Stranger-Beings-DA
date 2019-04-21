@@ -16,10 +16,11 @@
   font-weight: 500;
   line-height: 24px;
   border-radius: 5px;
-  width: 200px;
+  width: auto;
   padding: 10px 20px;
   margin: 0px 20px;
   z-index: 1;
+  max-width: 350px;
 }
 
 hr {

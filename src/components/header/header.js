@@ -7,15 +7,17 @@ const options = [
   { value: "/", label: "Home" },
   { value: "semester1", label: "Semester 1" },
   { value: "semester2", label: "Semester 2" },
-  { value: "rural-internship", label: "RI" },
   { value: "semester3", label: "Semester 3" },
+  { value: "rural-internship", label: "RI" },
   { value: "semester4", label: "Semester 4" },
   { value: "semester5", label: "Semester 5" },
   { value: "semester6", label: "Semester 6" },
   { value: "semester7", label: "Semester 7" },
+  { value: "trip", label: "Imagica/Matheran Trip" },
   { value: "semester8", label: "Semester 8" },
   { value: "random", label: "RANDOM" },
   { value: "imageFetch", label: "Image fetch test"}
+  { value: "thankyounote", label: "Personal Section" },
 ];
 
 const BASE_URL = `https://devansaga.github.io/Stranger-Beings-DA/`;
