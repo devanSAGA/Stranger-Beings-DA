@@ -14,7 +14,8 @@ const options = [
   { value: "semester6", label: "Semester 6" },
   { value: "semester7", label: "Semester 7" },
   { value: "semester8", label: "Semester 8" },
-  { value: "random", label: "RANDOM" }
+  { value: "random", label: "RANDOM" },
+  { value: "imageFetch", label: "Image fetch test"}
 ];
 
 const BASE_URL = `https://devansaga.github.io/Stranger-Beings-DA/`;

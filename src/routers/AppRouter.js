@@ -13,6 +13,7 @@ import SemesterSeven from "../pages/semesterSeven/semesterSeven";
 import SemesterEight from "../pages/semesterEight/semesterEight";
 import RIPage from "../pages/ripage/ripage";
 import Random from "../pages/randomPage/randomPage";
+import imageFetch from "../pages/imageFetch/imageFetch";
 
 const AppRouter = () => {
   return (
@@ -30,6 +31,7 @@ const AppRouter = () => {
           <Route path="/semester7" component={SemesterSeven} />
           <Route path="/semester8" component={SemesterEight} />
           <Route path="/rural-internship" component={RIPage} />
+          <Route path = "/imageFetch" component = {imageFetch} />
           <Route path="/random" component={Random} />
         </Switch>
       </React.Fragment>
