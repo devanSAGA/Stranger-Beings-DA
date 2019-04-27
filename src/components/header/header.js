@@ -16,8 +16,8 @@ const options = [
   { value: "trip", label: "Imagica/Matheran Trip" },
   { value: "semester8", label: "Semester 8" },
   { value: "random", label: "RANDOM" },
-  { value: "imageFetch", label: "Image fetch test"}
-  { value: "thankyounote", label: "Personal Section" },
+  { value: "imageFetch", label: "Image fetch test"},
+  { value: "thankyounote", label: "Personal Section" }
 ];
 
 const BASE_URL = `https://devansaga.github.io/Stranger-Beings-DA/`;
