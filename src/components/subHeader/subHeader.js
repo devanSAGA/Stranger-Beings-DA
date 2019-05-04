@@ -3,7 +3,7 @@ import "./subHeader.css";
 
 const subHeader = props => {
   return (
-    <div className="subheader-container" id={`semester${props.semester}`}>
+    <div className="subheader-container" id={`${props.title}`}>
       <hr />
       <div className="subheader">{props.title}</div>
       <hr />

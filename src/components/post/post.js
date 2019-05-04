@@ -20,7 +20,7 @@ class Post extends React.Component {
       <div
         className={"post-container " + this.getLayoutStyle(this.props.layout)}
       >
-        <img src={this.props.src} alt="funny_image" />
+        {this.props.src && <img src={this.props.src} alt="funny_image" />}
         <div className="description">{this.props.description}</div>
       </div>
     );
