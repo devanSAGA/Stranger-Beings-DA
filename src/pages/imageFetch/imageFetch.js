@@ -84,11 +84,11 @@ class imageFetch extends React.Component {
     <div className="semester-container">
     <SubHeader title="Image fetch" />
     <div className="post-grid">
-      <div className="two-verticals">
+      <div>
       {
         this.state.images.map((image) => {
           return <Post
-          layout={image.title}  
+          layout={image.title}
           description={image.description}
           src = {image.link}
           />
