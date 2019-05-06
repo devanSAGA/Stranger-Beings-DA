@@ -1,7 +1,7 @@
 .semester-container {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -9,4 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 710px) {
+
 }
