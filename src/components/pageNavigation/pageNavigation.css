@@ -1,0 +1,17 @@
+.navigation-controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.navigation-controls div {
+    font-size: 20px;
+    color: #113f67;
+    cursor: pointer;
+}
+
+.navigation-controls div:hover {
+    text-decoration: underline;
+}
