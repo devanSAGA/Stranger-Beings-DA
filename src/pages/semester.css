@@ -5,3 +5,11 @@
   align-items: center;
   width: 100%;
 }
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}

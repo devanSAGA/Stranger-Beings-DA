@@ -13,7 +13,6 @@
 }
 
 .vertical-image {
-  height: 600px;
   flex-direction: row;
   justify-content: center;
 }
@@ -25,6 +24,7 @@
 
 .vertical-image img {
   width: 50%;
+  height: 600px;
   box-sizing: border-box;
 }
 .horizontal-image img {
@@ -46,11 +46,11 @@
 
 .horizontal-image .description {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
-.horizontal-image .no-image {
-  padding: 0px;
+.image-container .no-image {
+  padding: 0 20px;
 }
 
 @media only screen and (max-width: 710px) {
@@ -64,15 +64,14 @@
 
   .vertical-image img {
     width: 75%;
+    height: auto;
   }
-
   .vertical-image .description {
     padding-top: 20px;
   }
   .horizontal-image img {
     min-height: 0px;
   } 
-
 
   /* img, .description {
     max-width: 90vw;
