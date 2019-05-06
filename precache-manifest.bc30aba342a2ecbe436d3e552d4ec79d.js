@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/Stranger-Beings-DA/static/js/runtime~main.efdab85e.js"
   },
   {
-    "revision": "f8c0eaca83f139533087",
-    "url": "/Stranger-Beings-DA/static/js/main.f8c0eaca.chunk.js"
+    "revision": "489faecbbf5003cadbd7",
+    "url": "/Stranger-Beings-DA/static/js/main.489faecb.chunk.js"
   },
   {
-    "revision": "9d77fdb275bcba9de576",
-    "url": "/Stranger-Beings-DA/static/js/2.9d77fdb2.chunk.js"
+    "revision": "f49d5621c2f58a4f2a89",
+    "url": "/Stranger-Beings-DA/static/js/2.f49d5621.chunk.js"
   },
   {
-    "revision": "f8c0eaca83f139533087",
-    "url": "/Stranger-Beings-DA/static/css/main.eb484eb7.chunk.css"
+    "revision": "489faecbbf5003cadbd7",
+    "url": "/Stranger-Beings-DA/static/css/main.c547c6b8.chunk.css"
   },
   {
-    "revision": "9e982c758c463d5e66c19b2abc68c331",
+    "revision": "667c4cc1fc09ae8d72f6e7e8999df3aa",
     "url": "/Stranger-Beings-DA/index.html"
   }
 ];
