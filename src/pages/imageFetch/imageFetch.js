@@ -80,10 +80,15 @@ class imageFetch extends React.Component {
     this.fetchImage();
   }
   render() {
+<<<<<<< HEAD
+=======
+    let isPrevImageVertical = false;
+>>>>>>> c2491e831099eb1db1d5502c058f62827360f42a
     return (
     <div className="semester-container">
     <SubHeader title="Image fetch" />
     <div className="post-grid">
+<<<<<<< HEAD
       <div>
       {
         this.state.images.map((image) => {
@@ -95,6 +100,26 @@ class imageFetch extends React.Component {
         })
       }
       </div>
+=======
+      {
+        this.state.images.map((image) => {
+          if (image.title==='Vertical')
+          {                                                                                                                                                                                             
+            isPrevImageVertical = !isPrevImageVertical;
+          }
+          else
+          {
+            isPrevImageVertical = false;
+          }
+          return <Post
+          layout={image.title}  
+          description={image.description}
+          src = {image.link}
+          alignment={isPrevImageVertical}
+          />
+        })
+      }
+>>>>>>> c2491e831099eb1db1d5502c058f62827360f42a
     </div>
   </div>
    )

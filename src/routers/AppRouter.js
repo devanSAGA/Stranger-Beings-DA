@@ -13,9 +13,10 @@ import SemesterSeven from "../pages/semesterSeven/semesterSeven";
 import SemesterEight from "../pages/semesterEight/semesterEight";
 import RIPage from "../pages/ripage/ripage";
 import Random from "../pages/randomPage/randomPage";
-import TripPage from "../pages/tripPage/tripPage";
 import imageFetch from "../pages/imageFetch/imageFetch";
 import TripPage from "../pages/tripPage/tripPage";
+import imageFetch from "../pages/imageFetch/imageFetch";
+
 
 
 const AppRouter = () => {
@@ -34,6 +35,7 @@ const AppRouter = () => {
           <Route path="/semester7" component={SemesterSeven} />
           <Route path="/semester8" component={SemesterEight} />
           <Route path="/rural-internship" component={RIPage} />
+          <Route path = "/imageFetch" component = {imageFetch} />
           <Route path="/trip" component={TripPage} />
           <Route path = "/imageFetch" component = {imageFetch} />
           <Route path="/trip" component={TripPage} />
