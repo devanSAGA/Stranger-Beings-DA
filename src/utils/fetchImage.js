@@ -9,7 +9,6 @@ export const fetchImage = URL => {
             return res.json();
         })
         .then((response) => {
-            console.log(response);
             this.setState({
             images: response.data
             });

@@ -1,60 +1,74 @@
-import React from "react";
+import React from 'react';
 import Loader from 'react-loader-spinner';
-import SubHeader from "../../components/subHeader/subHeader";
-import Post from "../../components/post/post";
+import SubHeader from '../../components/subHeader/subHeader';
+import Post from '../../components/post/post';
 import PageNavigation from '../../components/pageNavigation/pageNavigation';
-import { fetchImage } from '../../utils/fetchImage';
-import "../semester.css";
+import '../semester.css';
 
-class SemesterTwo extends React.Component{
-  constructor(props){
+class SemesterTwo extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
-      images : []
-    }
+      images: [],
+    };
   }
 
-  componentDidMount(){
-    fetchImage('https://api.imgur.com/3/album/7Stvgch/images');
+  componentDidMount() {
+    fetch('https://api.imgur.com/3/album/7Stvgch/images', {
+      method: 'GET',
+      headers: {
+        Authorization: 'Bearer fb3e405dddad179e500323669d20a8f00826f0ba',
+      },
+    })
+      .then(res => {
+        return res.json();
+      })
+      .then(response => {
+        this.setState({
+          images: response.data,
+        });
+      });
   }
-  
-  render(){
+
+  render() {
     let isPrevImageVertical = false;
     return (
-        <div className="semester-container">
+      <div className="semester-container">
         <SubHeader title="Semester 2" />
-        {
-          this.state.images.length > 1 ? (
+        {this.state.images.length > 1 ? (
+          <React.Fragment>
             <div className="post-grid">
-        {
-          this.state.images.map((image) => {
-            if (image.title==='Vertical')
-            {                                                                                                                                                                                             
-              isPrevImageVertical = !isPrevImageVertical;
-            }
-            else
-            {
-              isPrevImageVertical = false;
-            }
-            return <Post
-            layout={image.title}  
-            description={image.description}
-            src = {image.link}
-            alignment={isPrevImageVertical}
-            />
-          })
-        }
-        </div>
-          ) : (
-            <div className="spinner-container">
-              <Loader type="Oval" color="#113f67" height={60} width={60} />      
+              {this.state.images.map(image => {
+                if (image.title === 'Vertical') {
+                  isPrevImageVertical = !isPrevImageVertical;
+                } else {
+                  isPrevImageVertical = false;
+                }
+                return (
+                  <Post
+                    layout={image.title}
+                    description={image.description}
+                    src={image.link}
+                    alignment={isPrevImageVertical}
+                  />
+                );
+              })}
             </div>
-          ) 
-        }
-        <PageNavigation nextPageText="Semester 3" prevPageText="Semester 1" nextPageLink="semester3" prevPageLink="semester1"/>
+          </React.Fragment>
+        ) : (
+          <div className="spinner-container">
+            <Loader type="Oval" color="#113f67" height={60} width={60} />
+          </div>
+        )}
+        <PageNavigation
+          nextPageText="Semester3"
+          prevPageText="Semester1"
+          nextPageLink="semester3"
+          prevPageLink="semester1"
+        />
       </div>
     );
   }
-};
+}
 
 export default SemesterTwo;
