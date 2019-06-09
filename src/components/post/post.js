@@ -20,7 +20,9 @@ class Post extends React.Component {
               {this.props.description}
             </div>
           )}
-          {this.props.src && <img src={this.props.src} alt="funny_image" />}
+          {!this.props.hideImage ? (
+            <img src={this.props.src} alt="funny_image" />
+          ) : null}
         </div>
       );
     } else {
@@ -28,7 +30,9 @@ class Post extends React.Component {
         <div
           className={'post-container ' + this.getLayoutStyle(this.props.layout)}
         >
-          {this.props.src && <img src={this.props.src} alt="funny_image" />}
+          {!this.props.hideImage ? (
+            <img src={this.props.src} alt="funny_image" />
+          ) : null}
           {this.props.description && (
             <div
               className={'description ' + (this.props.src ? '' : 'no-image')}
