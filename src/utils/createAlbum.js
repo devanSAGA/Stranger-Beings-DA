@@ -31,8 +31,11 @@ function createAlbum(albumName) {
 };
 
 function createAllAlbums() {
-  for(i=1;i<=8;i++) {
-    console.log('sem_'+i +" : " + createAlbum("sem_"+i));
+  var albumNames = ["Sem-1","Sem-2","Sem-3","Sem-4","Sem-5","Sem-6","Sem-7","Sem-8","RI","Home","Trip","Random"]
+  for(i=0;i<albumNames.length;i++) {
+    var albumName = albumNames[i];
+    //console.log(albumNames[i]);
+    console.log(albumName + " : " + createAlbum(albumName));
   }
 };
 

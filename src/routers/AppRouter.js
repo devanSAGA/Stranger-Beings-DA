@@ -15,7 +15,6 @@ import RIPage from "../pages/ripage/ripage";
 import Random from "../pages/randomPage/randomPage";
 import imageFetch from "../pages/imageFetch/imageFetch";
 import TripPage from "../pages/tripPage/tripPage";
-import imageFetch from "../pages/imageFetch/imageFetch";
 
 
 

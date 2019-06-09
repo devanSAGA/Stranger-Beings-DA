@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e; # stop on error
 
-pushd /Users/rutup/Workplace/Stranger-Beings-DA/dataFiles/Images
+pushd /Users/rutup/Workplace/Stranger-Beings-DA/dataFiles/FinalContent/RI/Images
 i=0;
 
 for file in *; do
