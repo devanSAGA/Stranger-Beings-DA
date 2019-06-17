@@ -16,7 +16,9 @@ class Post extends React.Component {
             <div
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
-              {this.props.description}
+              {this.props.description.split('_nl_').map((line) => {
+                return <p style={{margin: '0px'}}>{line}</p>;
+              })}
             </div>
           )}
           {!this.props.hideImage ? (
@@ -54,7 +56,9 @@ class Post extends React.Component {
             <div
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
-              {this.props.description}
+              {this.props.description.split('_nl_').map((line) => {
+                return <p style={{margin: '0px'}}>{line}</p>;
+              })}
             </div>
           )}
         </div>
