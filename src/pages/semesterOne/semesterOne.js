@@ -54,6 +54,8 @@ class semesterOne extends React.Component {
                     src={image.link}
                     alignment={isPrevImageVertical}
                     hideImage={!layout}
+                    height={image.height}
+                    width={image.width}
                   />
                 );
               })}
@@ -64,7 +66,12 @@ class semesterOne extends React.Component {
             <Loader type="Oval" color="#113f67" height={60} width={60} />
           </div>
         )}
-        <PageNavigation nextPageText="Semester 2" nextPageLink="semester2" />
+        <PageNavigation
+          prevPageText={null}
+          nextPageText="Semester 2"
+          prevPageLink={null}
+          nextPageLink="semester2"
+        />
       </div>
     );
   }

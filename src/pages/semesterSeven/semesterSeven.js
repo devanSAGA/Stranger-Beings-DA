@@ -54,6 +54,8 @@ class SemesterSeven extends React.Component {
                     src={image.link}
                     alignment={isPrevImageVertical}
                     hideImage={!layout}
+                    height={image.height}
+                    width={image.width}
                   />
                 );
               })}

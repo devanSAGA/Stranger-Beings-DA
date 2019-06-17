@@ -54,6 +54,8 @@ class SemesterFour extends React.Component {
                     src={image.link}
                     alignment={isPrevImageVertical}
                     hideImage={!layout}
+                    height={image.height}
+                    width={image.width}
                   />
                 );
               })}
@@ -68,7 +70,7 @@ class SemesterFour extends React.Component {
           nextPageText="Semester 5"
           prevPageText="Rural Internship"
           nextPageLink="semester5"
-          prevPageink="rural-internship"
+          prevPageLink="rural-internship"
         />
       </div>
     );

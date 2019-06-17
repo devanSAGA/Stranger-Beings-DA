@@ -7,7 +7,6 @@ class Post extends React.Component {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    console.log(width);
     if (this.props.alignment && width >= 710) {
       return (
         <div
@@ -21,7 +20,16 @@ class Post extends React.Component {
             </div>
           )}
           {!this.props.hideImage ? (
-            <img src={this.props.src} alt="funny_image" />
+            this.props.layout === 'Vertical' ? (
+              <img
+                src={this.props.src}
+                height={this.props.height}
+                width={this.props.width}
+                alt="funny_image"
+              />
+            ) : (
+              <img src={this.props.src} alt="funny_image" />
+            )
           ) : null}
         </div>
       );
@@ -31,7 +39,16 @@ class Post extends React.Component {
           className={'post-container ' + this.getLayoutStyle(this.props.layout)}
         >
           {!this.props.hideImage ? (
-            <img src={this.props.src} alt="funny_image" />
+            this.props.layout === 'Vertical' ? (
+              <img
+                src={this.props.src}
+                height={this.props.height}
+                width={this.props.width}
+                alt="funny_image"
+              />
+            ) : (
+              <img src={this.props.src} alt="funny_image" />
+            )
           ) : null}
           {this.props.description && (
             <div

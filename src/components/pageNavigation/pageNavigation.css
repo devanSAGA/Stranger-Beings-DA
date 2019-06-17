@@ -1,17 +1,27 @@
-.navigation-controls{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 700px;
-    margin: 30px auto;
+.navigation-controls {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  justify-content: flex-end;
 }
 
 .navigation-controls div {
-    font-size: 20px;
-    color: #113f67;
-    cursor: pointer;
+  font-size: 20px;
+  color: #113f67;
+  cursor: pointer;
 }
 
 .navigation-controls div:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.navigation-controls .left {
+  width: 50%;
+  text-align: left;
+}
+
+.navigation-controls .right {
+  width: 50%;
+  text-align: right;
 }

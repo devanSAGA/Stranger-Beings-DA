@@ -1,22 +1,20 @@
-import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Header from "../components/header/header";
-import HomePage from "../pages/homePage/homePage";
-import SemesterOne from "../pages/semesterOne/semesterOne";
-import SemesterTwo from "../pages/semesterTwo/semesterTwo";
-import SemesterThree from "../pages/semesterThree/semesterThree";
-import SemesterFour from "../pages/semesterFour/semesterFour";
-import SemesterFive from "../pages/semesterFive/semesterFive";
-import SemesterSix from "../pages/semesterSix/semesterSix";
-import SemesterSeven from "../pages/semesterSeven/semesterSeven";
-import SemesterEight from "../pages/semesterEight/semesterEight";
-import RIPage from "../pages/ripage/ripage";
-import Random from "../pages/randomPage/randomPage";
-import imageFetch from "../pages/imageFetch/imageFetch";
-import TripPage from "../pages/tripPage/tripPage";
-
-
+import Header from '../components/header/header';
+import HomePage from '../pages/homePage/homePage';
+import SemesterOne from '../pages/semesterOne/semesterOne';
+import SemesterTwo from '../pages/semesterTwo/semesterTwo';
+import SemesterThree from '../pages/semesterThree/semesterThree';
+import SemesterFour from '../pages/semesterFour/semesterFour';
+import SemesterFive from '../pages/semesterFive/semesterFive';
+import SemesterSix from '../pages/semesterSix/semesterSix';
+import SemesterSeven from '../pages/semesterSeven/semesterSeven';
+import SemesterEight from '../pages/semesterEight/semesterEight';
+import RIPage from '../pages/ripage/ripage';
+import Random from '../pages/randomPage/randomPage';
+import imageFetch from '../pages/imageFetch/imageFetch';
+import TripPage from '../pages/tripPage/tripPage';
 
 const AppRouter = () => {
   return (
@@ -34,9 +32,9 @@ const AppRouter = () => {
           <Route path="/semester7" component={SemesterSeven} />
           <Route path="/semester8" component={SemesterEight} />
           <Route path="/rural-internship" component={RIPage} />
-          <Route path = "/imageFetch" component = {imageFetch} />
+          <Route path="/imageFetch" component={imageFetch} />
           <Route path="/trip" component={TripPage} />
-          <Route path = "/imageFetch" component = {imageFetch} />
+          <Route path="/imageFetch" component={imageFetch} />
           <Route path="/trip" component={TripPage} />
           <Route path="/random" component={Random} />
         </Switch>
