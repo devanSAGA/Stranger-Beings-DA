@@ -40,7 +40,7 @@ class semesterOne extends React.Component {
         {this.state.images.length > 1 ? (
           <React.Fragment>
             <div className="post-grid">
-              {this.state.images.map(image => {
+              {this.state.images.map((image, index) => {
                 let layout = getLayout(image.title);
                 if (layout === 'Vertical') {
                   isPrevImageVertical = !isPrevImageVertical;
@@ -49,6 +49,7 @@ class semesterOne extends React.Component {
                 }
                 return (
                   <Post
+                    key={index}
                     layout={layout}
                     description={image.description}
                     src={image.link}

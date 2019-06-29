@@ -60,6 +60,18 @@ class TripPage extends React.Component {
                 );
               })}
             </div>
+            <div className="video-container">
+              <h3>
+                The Origin Story of Linux <code>echo</code> Command
+              </h3>
+              <div
+                className="video"
+                dangerouslySetInnerHTML={{
+                  __html:
+                    '<iframe width="560" height="315" src="https://www.youtube.com/embed/SaxyLQpu7GE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                }}
+              />
+            </div>
           </React.Fragment>
         ) : (
           <div className="spinner-container">

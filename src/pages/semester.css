@@ -13,3 +13,21 @@
   height: 500px;
   width: 100%;
 }
+
+.video-container {
+  text-align: center;
+}
+
+.video-container h3 {
+  color: #113f67;
+}
+
+@media only screen and (max-width: 710px) {
+  .video-container {
+    box-sizing: border-box;
+  }
+
+  .video iframe {
+    width: 100% !important;
+  }
+}

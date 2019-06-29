@@ -16,12 +16,16 @@ class Post extends React.Component {
             <div
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
-              {this.props.description.split('_nl_').map((line) => {
-                return <p style={{margin: '0px'}}>{line}</p>;
+              {this.props.description.split('_nl_').map((line, index) => {
+                return (
+                  <p key={index} style={{ margin: '0px' }}>
+                    {line}
+                  </p>
+                );
               })}
             </div>
           )}
-          {!this.props.hideImage ? (
+          {!this.props.hideImage && this.props.layout ? (
             this.props.layout === 'Vertical' ? (
               <img
                 src={this.props.src}
@@ -40,7 +44,7 @@ class Post extends React.Component {
         <div
           className={'post-container ' + this.getLayoutStyle(this.props.layout)}
         >
-          {!this.props.hideImage ? (
+          {!this.props.hideImage && this.props.layout ? (
             this.props.layout === 'Vertical' ? (
               <img
                 src={this.props.src}
@@ -56,8 +60,12 @@ class Post extends React.Component {
             <div
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
-              {this.props.description.split('_nl_').map((line) => {
-                return <p style={{margin: '0px'}}>{line}</p>;
+              {this.props.description.split('_nl_').map((line, index) => {
+                return (
+                  <p key={index} style={{ margin: '0px' }}>
+                    {line}
+                  </p>
+                );
               })}
             </div>
           )}
