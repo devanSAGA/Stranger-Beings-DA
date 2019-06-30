@@ -8,7 +8,7 @@ function createAlbum(albumName) {
     method: 'POST',
     url: 'https://api.imgur.com/3/album',
     headers: {
-      Authorization: 'Bearer fb3e405dddad179e500323669d20a8f00826f0ba',
+      Authorization: 'Bearer bcd027e8a7fb7aae65bd03bae87988b66ae00813',
       'content-type': 'multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW'
     },
     formData: {

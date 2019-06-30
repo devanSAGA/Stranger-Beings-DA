@@ -19,7 +19,7 @@ class imageFetch extends React.Component {
     fetch('https://api.imgur.com/3/album/7Stvgch/images', {
       method: 'GET',
       headers: {
-        'Authorization': 'Bearer fb3e405dddad179e500323669d20a8f00826f0ba'
+        'Authorization': 'Bearer bcd027e8a7fb7aae65bd03bae87988b66ae00813'
       }
     })
       .then((res) => {
