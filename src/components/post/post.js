@@ -3,11 +3,11 @@ import './post.css';
 
 class Post extends React.Component {
   getLayout = () => {
-    let width =
+    let widthOfScreen =
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    if (this.props.alignment && width >= 710) {
+    if (this.props.alignment && widthOfScreen >= 710) {
       return (
         <div
           className={'post-container ' + this.getLayoutStyle(this.props.layout)}
@@ -31,12 +31,12 @@ class Post extends React.Component {
                 src={this.props.src}
                 style={{
                   width: `${this.props.width}`,
-                  height: `${this.props.height}`,
+                  height: this.props.height,
                 }}
-                alt="funny_image"
+                alt={`funny_image_${this.props.id}`}
               />
             ) : (
-              <img src={this.props.src} alt="funny_image" />
+              <img src={this.props.src} alt={`funny_image_${this.props.id}`} />
             )
           ) : null}
         </div>
@@ -52,12 +52,12 @@ class Post extends React.Component {
                 src={this.props.src}
                 style={{
                   width: `${this.props.width}`,
-                  height: `${this.props.height}`,
+                  height: this.props.height,
                 }}
-                alt="funny_image"
+                alt={`funny_image_${this.props.id}`}
               />
             ) : (
-              <img src={this.props.src} alt="funny_image" />
+              <img src={this.props.src} alt={`funny_image_${this.props.id}`} />
             )
           ) : null}
           {this.props.description && (
