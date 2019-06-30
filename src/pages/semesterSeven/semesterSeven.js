@@ -61,7 +61,7 @@ class SemesterSeven extends React.Component {
               })}
             </div>
             <div className="video-container">
-              <h3>Dove expriment at the Zoo</h3>
+              <h3>Dove experiment at the Zoo</h3>
               <div
                 className="video"
                 dangerouslySetInnerHTML={{
