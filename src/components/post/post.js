@@ -29,8 +29,10 @@ class Post extends React.Component {
             this.props.layout === 'Vertical' ? (
               <img
                 src={this.props.src}
-                height={this.props.height}
-                width={this.props.width}
+                style={{
+                  width: `${this.props.width}`,
+                  height: `${this.props.height}`,
+                }}
                 alt="funny_image"
               />
             ) : (
@@ -48,8 +50,10 @@ class Post extends React.Component {
             this.props.layout === 'Vertical' ? (
               <img
                 src={this.props.src}
-                height={this.props.height}
-                width={this.props.width}
+                style={{
+                  width: `${this.props.width}`,
+                  height: `${this.props.height}`,
+                }}
                 alt="funny_image"
               />
             ) : (
