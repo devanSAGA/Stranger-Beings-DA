@@ -17,11 +17,19 @@ class Post extends React.Component {
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
               {this.props.description.split('_nl_').map((line, index) => {
-                return (
-                  <p key={index} style={{ margin: '0px' }}>
-                    {line}
-                  </p>
-                );
+                if(line==="") {
+                  return (
+                    <p key={index} style={{ margin: '10px' }}>
+                      {line}
+                    </p>
+                  );
+                } else {
+                  return (
+                    <p key={index} style={{ margin: '0px' }}>
+                      {line}
+                    </p>
+                  );
+                }
               })}
             </div>
           )}
@@ -65,11 +73,19 @@ class Post extends React.Component {
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
               {this.props.description.split('_nl_').map((line, index) => {
-                return (
-                  <p key={index} style={{ margin: '0px' }}>
-                    {line}
-                  </p>
-                );
+                if(line==="") {
+                  return (
+                    <p key={index} style={{ margin: '10px' }}>
+                      {line}
+                    </p>
+                  );
+                } else {
+                  return (
+                    <p key={index} style={{ margin: '0px' }}>
+                      {line}
+                    </p>
+                  );
+                }
               })}
             </div>
           )}
