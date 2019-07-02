@@ -1,5 +1,6 @@
 import React from 'react';
 import './homePage.css';
+import { withRouter } from 'react-router';
 
 const HomePage = props => {
   return (
@@ -37,8 +38,19 @@ const HomePage = props => {
         the memories that were shared through these 4 years. People who became
         friends for life and made college the best part of our life.
       </p>
+      <hr />
+      <div className="navigation-container">
+        <button
+          className="lets-start-button"
+          onClick={() => {
+            props.history.push('semester1');
+          }}
+        >
+          Let's Start
+        </button>
+      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default withRouter(HomePage);
