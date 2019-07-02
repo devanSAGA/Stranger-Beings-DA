@@ -7,7 +7,6 @@ class Post extends React.Component {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    console.log('width of the screen', widthOfScreen);
     if (widthOfScreen >= 710) {
       if (this.props.alignment) {
         return (
@@ -21,11 +20,19 @@ class Post extends React.Component {
                 className={'description ' + (this.props.src ? '' : 'no-image')}
               >
                 {this.props.description.split('_nl_').map((line, index) => {
-                  return (
-                    <p key={index} style={{ margin: '0px' }}>
-                      {line}
-                    </p>
-                  );
+                  if (line === '') {
+                    return (
+                      <p key={index} style={{ margin: '10px' }}>
+                        {line}
+                      </p>
+                    );
+                  } else {
+                    return (
+                      <p key={index} style={{ margin: '0px' }}>
+                        {line}
+                      </p>
+                    );
+                  }
                 })}
               </div>
             )}
@@ -77,11 +84,19 @@ class Post extends React.Component {
                 className={'description ' + (this.props.src ? '' : 'no-image')}
               >
                 {this.props.description.split('_nl_').map((line, index) => {
-                  return (
-                    <p key={index} style={{ margin: '0px' }}>
-                      {line}
-                    </p>
-                  );
+                  if (line === '') {
+                    return (
+                      <p key={index} style={{ margin: '10px' }}>
+                        {line}
+                      </p>
+                    );
+                  } else {
+                    return (
+                      <p key={index} style={{ margin: '0px' }}>
+                        {line}
+                      </p>
+                    );
+                  }
                 })}
               </div>
             )}
@@ -105,11 +120,19 @@ class Post extends React.Component {
               className={'description ' + (this.props.src ? '' : 'no-image')}
             >
               {this.props.description.split('_nl_').map((line, index) => {
-                return (
-                  <p key={index} style={{ margin: '0px' }}>
-                    {line}
-                  </p>
-                );
+                if (line === '') {
+                  return (
+                    <p key={index} style={{ margin: '10px' }}>
+                      {line}
+                    </p>
+                  );
+                } else {
+                  return (
+                    <p key={index} style={{ margin: '0px' }}>
+                      {line}
+                    </p>
+                  );
+                }
               })}
             </div>
           )}
