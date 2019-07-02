@@ -14,8 +14,8 @@ const options = [
   { value: 'semester6', label: 'Semester 6' },
   { value: 'semester7', label: 'Semester 7' },
   { value: 'trip', label: 'Imagica/Matheran Trip' },
-  { value: 'semester8', label: 'Semester 8' },
   { value: 'random', label: 'RANDOM' },
+  { value: 'semester8', label: 'Semester 8' },
 ];
 
 class Header extends React.Component {
@@ -41,7 +41,7 @@ class Header extends React.Component {
     return (
       <div className="header-container">
         <div className="header-title">Stranger Beings (DA Edition)</div>
-        {/* <div className="header-navigation-dropdown">
+        <div className="header-navigation-dropdown">
           <span>Go To: </span>
           <Select
             className="dropdown"
@@ -50,7 +50,7 @@ class Header extends React.Component {
             onChange={this.handleChange}
             options={options}
           />
-        </div> */}
+        </div>
       </div>
     );
   }

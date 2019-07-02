@@ -7,40 +7,87 @@ class Post extends React.Component {
       window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth;
-    if (this.props.alignment && widthOfScreen >= 710) {
-      return (
-        <div
-          className={'post-container ' + this.getLayoutStyle(this.props.layout)}
-        >
-          {this.props.description && (
-            <div
-              className={'description ' + (this.props.src ? '' : 'no-image')}
-            >
-              {this.props.description.split('_nl_').map((line, index) => {
-                return (
-                  <p key={index} style={{ margin: '0px' }}>
-                    {line}
-                  </p>
-                );
-              })}
-            </div>
-          )}
-          {!this.props.hideImage && this.props.layout ? (
-            this.props.layout === 'Vertical' ? (
-              <img
-                src={this.props.src}
-                style={{
-                  width: `${this.props.width}`,
-                  height: this.props.height,
-                }}
-                alt={`funny_image_${this.props.id}`}
-              />
-            ) : (
-              <img src={this.props.src} alt={`funny_image_${this.props.id}`} />
-            )
-          ) : null}
-        </div>
-      );
+    console.log('width of the screen', widthOfScreen);
+    if (widthOfScreen >= 710) {
+      if (this.props.alignment) {
+        return (
+          <div
+            className={
+              'post-container ' + this.getLayoutStyle(this.props.layout)
+            }
+          >
+            {this.props.description && (
+              <div
+                className={'description ' + (this.props.src ? '' : 'no-image')}
+              >
+                {this.props.description.split('_nl_').map((line, index) => {
+                  return (
+                    <p key={index} style={{ margin: '0px' }}>
+                      {line}
+                    </p>
+                  );
+                })}
+              </div>
+            )}
+            {!this.props.hideImage && this.props.layout ? (
+              this.props.layout === 'Vertical' ? (
+                <img
+                  src={this.props.src}
+                  style={{
+                    width: `${this.props.width}`,
+                    height: this.props.height,
+                  }}
+                  alt={`funny_image_${this.props.id}`}
+                />
+              ) : (
+                <img
+                  src={this.props.src}
+                  alt={`funny_image_${this.props.id}`}
+                />
+              )
+            ) : null}
+          </div>
+        );
+      } else {
+        return (
+          <div
+            className={
+              'post-container ' + this.getLayoutStyle(this.props.layout)
+            }
+          >
+            {!this.props.hideImage && this.props.layout ? (
+              this.props.layout === 'Vertical' ? (
+                <img
+                  src={this.props.src}
+                  style={{
+                    width: `${this.props.width}`,
+                    height: this.props.height,
+                  }}
+                  alt={`funny_image_${this.props.id}`}
+                />
+              ) : (
+                <img
+                  src={this.props.src}
+                  alt={`funny_image_${this.props.id}`}
+                />
+              )
+            ) : null}
+            {this.props.description && (
+              <div
+                className={'description ' + (this.props.src ? '' : 'no-image')}
+              >
+                {this.props.description.split('_nl_').map((line, index) => {
+                  return (
+                    <p key={index} style={{ margin: '0px' }}>
+                      {line}
+                    </p>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        );
+      }
     } else {
       return (
         <div
@@ -48,14 +95,7 @@ class Post extends React.Component {
         >
           {!this.props.hideImage && this.props.layout ? (
             this.props.layout === 'Vertical' ? (
-              <img
-                src={this.props.src}
-                style={{
-                  width: `${this.props.width}`,
-                  height: this.props.height,
-                }}
-                alt={`funny_image_${this.props.id}`}
-              />
+              <img src={this.props.src} alt={`funny_image_${this.props.id}`} />
             ) : (
               <img src={this.props.src} alt={`funny_image_${this.props.id}`} />
             )

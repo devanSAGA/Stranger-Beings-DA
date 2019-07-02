@@ -79,9 +79,9 @@ class TripPage extends React.Component {
           </div>
         )}
         <PageNavigation
-          nextPageText="Semester 8"
+          nextPageText="Random"
           prevPageText="Semester 7"
-          nextPageLink="semester8"
+          nextPageLink="random"
           prevPageLink="semester7"
         />
       </div>

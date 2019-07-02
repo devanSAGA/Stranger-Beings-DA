@@ -66,12 +66,7 @@ class SemesterEight extends React.Component {
             <Loader type="Oval" color="#113f67" height={60} width={60} />
           </div>
         )}
-        <PageNavigation
-          nextPageText="Random"
-          prevPageText="Semester 7"
-          nextPageLink="random"
-          prevPageLink="semester7"
-        />
+        <PageNavigation prevPageText="Random" prevPageLink="random" />
       </div>
     );
   }

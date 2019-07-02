@@ -66,7 +66,12 @@ class RandomPage extends React.Component {
             <Loader type="Oval" color="#113f67" height={60} width={60} />
           </div>
         )}
-        <PageNavigation prevPageText="Semester 8" prevPageLink="semester8" />
+        <PageNavigation
+          nextPageText="Semester 8"
+          nextPageLink="semester8"
+          prevPageText="Matheran Trip"
+          prevPageLink="trip"
+        />
       </div>
     );
   }
