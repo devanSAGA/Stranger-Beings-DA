@@ -5,6 +5,7 @@ import Post from '../../components/post/post';
 import PageNavigation from '../../components/pageNavigation/pageNavigation';
 import { getLayout, compareFunction } from '../../utils/utilityFunctions';
 import '../semester.css';
+var authorize = require('../../utils/authorize');
 
 class semesterOne extends React.Component {
   constructor(props) {
@@ -13,12 +14,13 @@ class semesterOne extends React.Component {
       images: [],
     };
   }
-
+  
   componentDidMount() {
+    authorize.initializeToken();
     fetch('https://api.imgur.com/3/album/GTLOwxm/images', {
       method: 'GET',
       headers: {
-        Authorization: 'Bearer bcd027e8a7fb7aae65bd03bae87988b66ae00813',
+        Authorization: 'Bearer ' + window.localStorage.getItem('access_token'),
       },
     })
       .then(res => {

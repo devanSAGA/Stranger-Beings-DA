@@ -5,6 +5,7 @@ import Post from '../../components/post/post';
 import PageNavigation from '../../components/pageNavigation/pageNavigation';
 import { getLayout, compareFunction } from '../../utils/utilityFunctions';
 import '../semester.css';
+var authorize = require('../../utils/authorize');
 
 class TripPage extends React.Component {
   constructor(props) {
@@ -15,6 +16,7 @@ class TripPage extends React.Component {
   }
 
   componentDidMount() {
+    authorize.initializeToken();
     fetch('https://api.imgur.com/3/album/0ZzJsbI/images', {
       method: 'GET',
       headers: {
